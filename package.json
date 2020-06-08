@@ -1,6 +1,6 @@
 {
   "name": "english-to-garo-cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A simple cli tool for English to Garo translation.",
   "main": "index.js",
   "scripts": {

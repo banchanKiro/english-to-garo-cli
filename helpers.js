@@ -25,5 +25,6 @@ exports.translateToGaro = (word) => {
     if(notFound) {
       console.error(`${word} was not found in the dictionary.`);
     }
+    readStream.destroy();
   });
 };

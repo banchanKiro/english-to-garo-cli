@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/banchanKiro/english-to-garo-cli/issues"
   },
-  "homepage": "https://github.com/banchanKiro/english-to-garo-cli#readme"
+  "homepage": "https://github.com/banchanKiro/english-to-garo-cli#readme",
+  "dependencies": {
+    "yargs": "^15.3.1"
+  }
 }

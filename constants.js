@@ -1,0 +1,1 @@
+exports.appFolder = __dirname;

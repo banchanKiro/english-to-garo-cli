@@ -1,22 +1,16 @@
-const fs = require('fs');
-const readline = require('readline');
+const yargs = require('yargs');
 
 const args = process.argv.slice(2);
 
 if (args.length === 0) {
-  console.error('Error: expected arguements');
+  yargs.showHelp();
+  return;
 }
 
-const readStream = fs.createReadStream('./file.dat');
-const rl = readline.createInterface({
-  input: readStream,
-  crlfDelay: Infinity,
-});
-
-rl.on('line', (line) => {
-  [key, value] = line.split('=');
-  index = args.findIndex((arg) => arg === key);
-  if (index >= 0) {
-    console.log(key,': ', value)
-  }
-});
+yargs
+  .command(require('./commands/translate'))
+  .alias('v','version')
+  .alias('h','help')
+  .version()
+  .help()
+  .argv;

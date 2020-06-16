@@ -3,6 +3,10 @@
   "version": "0.2.0",
   "description": "A simple cli tool for English to Garo translation.",
   "main": "index.js",
+  "bin": {
+    "e2garo": "index.js",
+    "english-to-garo-cli": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,13 +1,13 @@
 const { translateToGaro } = require('../helpers');
 
-exports.command = 'translate [key]';
+exports.command = 'translate [word]';
 exports.describe = 'Get the Garo Translation of the word';
 exports.handler = (argv) => {
-  const { key } = argv;
-  if(!key) {
+  const { word } = argv;
+  if(!word) {
     console.error('Please provide a word to translate');
     return;
   }
 
-  translateToGaro(key);
+  translateToGaro(word);
 };

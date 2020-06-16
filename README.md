@@ -1,7 +1,9 @@
 # english-to-garo-cli
 A simple cli tool (WIP) for English to Garo translation.
 
-```node index.js <English Word>```
+```english-to-garo-cli translate [word]```
+
+```e2garo translate [word]```
 
 # References
 + [Official node documents](https://nodejs.org/api/process.html)

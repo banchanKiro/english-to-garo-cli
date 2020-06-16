@@ -1,16 +1,12 @@
-const yargs = require('yargs');
+#!/usr/bin/env node
 
-const args = process.argv.slice(2);
-
-if (args.length === 0) {
-  yargs.showHelp();
-  return;
-}
-
-yargs
+require('yargs')
+  .scriptName("english-to-garo-cli")
+  .usage('e2garo <cmd> [args]')
   .command(require('./commands/translate'))
   .alias('v','version')
   .alias('h','help')
+  .demandCommand()
   .version()
   .help()
   .argv;

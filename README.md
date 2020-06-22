@@ -1,5 +1,5 @@
 # english-to-garo-cli
-A simple cli tool (WIP) for English to Garo translation.
+A simple cli tool for English to Garo translation.
 
 ```english-to-garo-cli translate [word]```
 
